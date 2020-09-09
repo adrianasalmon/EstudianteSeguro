@@ -1,13 +1,10 @@
-﻿
-
-namespace ApiSecCureStudent.Models
+﻿namespace admStudentSecurity.Models
 {
     using System;
     using System.ComponentModel.DataAnnotations;
     public class Student
     {
         [Key]
-        [Range (1,999999)]
         public int StudentID { get; set; }
 
         [StringLength(30)]
